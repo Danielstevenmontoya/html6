@@ -18,7 +18,7 @@ if ($LASTEXITCODE -eq 1) {
     throw "No se pudo comprobar si Index.html tiene cambios."
 }
 
-git push origin main
+git push --set-upstream origin main
 if ($LASTEXITCODE -ne 0) {
     throw "No se pudo enviar el cambio a GitHub. Revisa la autenticación y la conexión."
 }
