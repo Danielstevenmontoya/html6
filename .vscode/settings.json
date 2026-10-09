@@ -3,6 +3,7 @@
         "commands": [
             {
                 "match": "Index\\.html$",
+                "autoShowOutputPanel": "error",
                 "cmd": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\sync-to-github.ps1\""
             }
         ]
